@@ -34,7 +34,12 @@ table{
     table-layout: fixed; 
 }
 #ans{
+    display: inline-block;
+  max-width: 350px;
     font-size:70px;
+     white-space: nowrap;
+  overflow-x:auto;
+  overflow-y: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
