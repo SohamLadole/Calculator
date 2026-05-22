@@ -6,7 +6,12 @@ Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) =>{ 
         if(e.target.innerHTML == "="){
             result = eval(disp);
-            ans.innerText = "";
+            ans.innerText = result;
+            disp = "";
+        }
+        else if(e.target.innerHTML == "AC"){
+            ans.innerHTML = "";
+            disp = "";
         }
         else{
             disp = disp + e.target.innerHTML;
